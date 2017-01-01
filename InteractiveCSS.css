@@ -1,0 +1,27 @@
+h1 {
+	font-family: arial;
+	color: dimgray;
+}
+
+.orangebg, .changebtn, .fuchsiabg, .bluebg, .graybg {
+	width: 140pt;
+	padding: 5pt;
+	margin: 10pt;
+	border: 1px solid lightgray; 
+}
+
+.orangebg {
+	background-color: orange;
+}
+
+.fuchsiabg {
+	background-color: fuchsia;
+}
+
+.bluebg {
+	background-color: blue;
+}
+
+.graybg {
+	background-color: gray;
+}
