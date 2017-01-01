@@ -5,7 +5,7 @@ function applyColor() {
 }
 
 function drawSquare() {	
-	var slider = document.getElementById("range1");
+	var slider = document.getElementById("slider1");
 	var len = slider.value;
 	var canvas = document.getElementById("canvas1");
 	var ctx = canvas.getContext("2d");
