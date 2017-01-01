@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Events in HTML
+		</title>
+	</head>
+	<body>
+		<h1>Color Change Events</h1>
+		<canvas id="canvas1" class="division"></canvas>
+		<div id="div1" class="division">
+			<input type="color" id="color1" class="colorInp" onchange="applyColor();"></input>
+		</div>
+		<div id="div2" class="division">
+			<input type="range" id="range1" min="0" max="100" value="0" class="sliderInp" oninput="drawSquare();"></input>
+		</div>
+		<link rel="stylesheet" type="text/css" href="EventsCSS.css" />
+		<script src="EventsJavaScript.js"></script>
+	</body>
+</html>
