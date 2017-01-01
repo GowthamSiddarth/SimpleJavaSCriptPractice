@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			GrayScale Conversion of Image
+		</title>
+	</head>
+	<body>
+		<h1>Conversion of RGB image to GrayScale image</h1>
+		<canvas id="canvas1" ></canvas>
+		<canvas id="canvas2" ></canvas>
+		<div id="div1" class="division">
+			<input type="file" id="finput" multiple="false" accept="image/*" onchange="upload();" />
+			<input type="button" id="btn1" class="grayscale-btn" value="Convert into GrayScale" onclick="convert();" />
+		</div>
+		
+		<link rel="stylesheet" type="text/css" href="GrayScaleCSS.css" />
+		<script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+		<script src="GrayScaleJS.js"></script>
+	</body>
+</html>
