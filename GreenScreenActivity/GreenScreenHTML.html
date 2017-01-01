@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Green Screen Activity
+		</title>		
+	</head>
+	<body>
+		<h1>A simple Green Screen Activity</h1>
+		<canvas id="canvas1"></canvas>
+		<canvas id="canvas2"></canvas>
+		<div id="div1" class="division">
+			<input type="file" id="finput1" multiple="false" accept="image/*" class="inputbtn" value="Foreground Image" onchange="uploadForeground();"/>
+			<input type="file" id="finput2" multiple="false" accept="image/*" class="inputbtn" value="Background Image" onchange="uploadBackground();"/>			
+		</div>
+		<div id="div2" class="division">
+			<input type="button" id="btn3" class="funcbtn" value="Combine Images" onclick="combine();"/>
+			<input type="button" id="btn4" class="funcbtn" value="Clear Canvas" onclick="clearAllCanvas();"/>
+		</div>
+		<link rel="stylesheet" type="text/css" href="GreenScreenCSS.css" />
+		<script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+		<script src="GreenScreenJS.js"></script>
+	</body>
+</html>
