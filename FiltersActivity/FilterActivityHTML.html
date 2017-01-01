@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Filters Activity
+		</title>
+	</head>
+	<body>
+		<h1>A simple filters activity</h1>
+		<canvas id="canvas1"></canvas>
+		<div id="div1" class="division">
+			<p>
+				Add an image file
+			</p>	
+			<input type="file" multiple="false" accept="image/*" id="finput" class="fileinput" onchange="upload();"></input>
+			<div id=div2 class="division">
+				<span id="dim"></span>
+			</div>
+		</div>
+		<p id="para1" class="paragraph">
+			Apply your filters from below
+		</p>
+		<div id="div3" class="division">
+			<input type="button" id="btn1" class="filterbtn" value="Gray" onclick="gray();"/>
+			<input type="button" id="btn2" class="filterbtn" value="Red" onclick="red();"/>
+			<input type="button" id="btn3" class="filterbtn" value="Green" onclick="green();"/>
+			<input type="button" id="btn4" class="filterbtn" value="Blue" onclick="blue();"/>
+		</div>
+		<p id="para2" class="paragraph">
+			Reset Canvas
+		</p>
+		<div id="div4" class="division">			
+			<input type="button" id="btn5" class="filterbtn" value="Reset" onclick="upload();"/>
+		</div>
+		
+		<link rel="stylesheet" type="text/css" href="FilterActivityCSS.css"/>
+		<script src="FilterActivityJS.js" language="javascript"></script>
+		<script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js" language="javascript"></script>
+	</body>
+</html>
