@@ -212,3 +212,27 @@ function rainbow() {
 	var canvas = document.getElementById("canvas1");
 	image.drawTo(canvas);
 }
+
+function blurImage() {
+	if (null == image || !image.complete()) {
+		alert("No Image");
+		return;
+	}
+	
+	var output = new SimpleImage(image.getWidth(), image.getHeight());
+	for (var pixel of image.values()) {
+		var r = Math.random();
+		if (r < 0.5) {
+			var x = pixel.getX();
+			var y = pixel.getY();
+			output.setPixel(x, y, pixel);
+		} else {
+			var x = Math.floor(r * 10);
+			var y = Math.ceil(r * 10);
+			output.setPixel(pixel.getX(), pixel.getY(), image.getPixel(x, y));
+		}
+	}
+	
+	var canvas = document.getElementById("canvas1");
+	output.drawTo(canvas);
+}
